@@ -1,0 +1,7 @@
+{
+  "name": "Admin-lte Web POS",
+  "version": "1.0.0",
+  "dependencies": {
+    "admin-lte": "^3.0.5"
+  }
+}
