@@ -1,3 +1,7 @@
+.orderContent{
+    background-image: linear-gradient(to right top, #966525, #8d7827, #808934, #6d9a4c,
+    #54a96a, #4fb574, #47c27e, #3acf8a, #63dd76, #8ee95d, #bcf23d, #eef900);
+}
 .header{
     height: 90px;
 }
@@ -5,4 +9,29 @@
     color: white;!important;
     margin-top: 20px;
     margin-left: 5px;
+}
+.formCheck{
+display: flex;
+    justify-content: flex-end;
+}
+.OrderTable{
+    padding-top: 8px;
+}
+#price{
+    color: red;
+    font-weight: bold;
+    font-size: 25px;
+    width: min-content;
+    margin-bottom: 15px;
+}
+.place{
+    display: flex;
+    justify-content: flex-end;
+}
+.btnPlace{
+    margin-bottom: 15px;
+}
+.footer{
+    background-color: slategrey;
+    color: white;
 }

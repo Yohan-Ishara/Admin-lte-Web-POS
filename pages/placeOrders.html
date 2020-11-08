@@ -33,7 +33,7 @@
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
         <a href="/" class="brand-link">
-            <span class="brand-text font-weight-light">WEB POS</span>
+            <span class="brand-text font-weight-light">Ishara Traders</span>
         </a>
 
         <!-- Sidebar -->
@@ -91,8 +91,9 @@
     </aside>
 
     <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
+    <div class="content-wrapper orderContent">
         <!-- Main content -->
+        <div class="container">
         <section class="content">
             <div class="container-fluid">
                 <!-- Small boxes (Stat box) -->
@@ -122,11 +123,116 @@
                 <!-- /.row (main row) -->
             </div><!-- /.container-fluid -->
         </section>
+        </div>
+<!--        order form----------->
+        <form>
+            <div class="container">
+                <div class="container-fluid">
+            <div class="form-row">
+                <div class="dropdown col-12 col-md-2">
+                    <label for="dropdownMenuButton">Select Customer</label>
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Customer ID
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">C001</a>
+                            <a class="dropdown-item" href="#">C002</a>
+                            <a class="dropdown-item" href="#">C003</a>
+                        </div>
+                </div>
+                <div class="col-12 col-md-5">
+                    <label for="validationDefault01">Name</label>
+                    <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="yohan" required>
+                </div>
+                <div class="col-12 col-md-5">
+                    <label for="validationDefault02">Address</label>
+                    <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="kegalle" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="dropdown col-md-2 mb-3">
+                    <label for="dropdownItemButton">Select Item</label>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownItemButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       Item Code
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">I001</a>
+                        <a class="dropdown-item" href="#">I002</a>
+                        <a class="dropdown-item" href="#">I003</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationDefault03">Description</label>
+                    <input type="text" class="form-control" id="validationDefault03" placeholder="Description" required>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <label for="validationDefault04">Unit Price</label>
+                    <input type="text" class="form-control" id="validationDefault04" placeholder="Unit Price" required>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <label for="validationDefault05">Qty. ON Hand</label>
+                    <input type="text" class="form-control" id="validationDefault05" placeholder="Qty. ON Hand" required>
+                </div>
+                <div class="col-md-2 mb-3">
+                <label for="qty">Qty. Order</label>
+                <input type="text" class="form-control" name="orderQty" id="qty" placeholder="Qty" required>
+                </div>
+            </div>
+            <div class="formCheck">
+                <button class="btn btn-primary addToCart" type="submit">Add To Cart</button>
+            </div>
+                    <div class="OrderTable">
+                        <table class="table table-bordered table-hover">
+                            <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Item Code</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Qty On Hand</th>
+                                <th scope="col">Order Qty</th>
+                                <th scope="col">Unit Price (LKR)</th>
+                                <th scope="col">Total (LKR)</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>cement</td>
+                                <td>1000</td>
+                                <td>#</td>
+                                <td>1250</td>
+                                <td>#</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>LP gas</td>
+                                <td>500</td>
+                                <td>#</td>
+                                <td>1300</td>
+                                <td>#</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>steel</td>
+                                <td>1000</td>
+                                <td>#</td>
+                                <td>400</td>
+                                <td>#</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="place container-fluid">
+                        <input type="text" id="price" readonly class="form-control-plaintext" value="TOTAL: 0.00">
+                        <button class="btn btn-danger btnPlace" type="submit">Place Order</button>
+                    </div>
+                </div>
+            </div>
+        </form>
         <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
-    <footer class="main-footer">
-        <strong>Copyright &copy; 2020 <a href="http://adminlte.io">ijse.lk</a>.</strong>
+    <footer class="main-footer footer">
+        <strong>Copyright &copy; 2020 <a href="http://ijse.lk">ijse.lk</a>.</strong>
         All rights reserved.
         <div class="float-right d-none d-sm-inline-block">
             <b>Version</b> 1.0.0
