@@ -91,7 +91,7 @@
     </aside>
 
     <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
+    <div class="content-wrapper itemContent">
         <!-- Main content -->
         <section class="content">
             <div class="container-fluid">
@@ -120,6 +120,81 @@
             </div><!-- /.container-fluid -->
         </section>
         <!-- /.content -->
+        <!--/.form--->
+        <div class="container">
+            <form>
+                <div class="form-row">
+                    <div class="col-md-2 mb-3">
+                        <label for="validationServer01">Item Code</label>
+                        <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Item Code" value="Mark" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="validationServer02">Description</label>
+                        <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Description" value="Otto" required>
+                    </div>
+                    <div class="col-md-2 mb-3">
+                        <label for="validationServer03">QTY. On Hand</label>
+                        <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="QTY. On Hand" required>
+                    </div>
+                    <div class="col-md-2 mb-3">
+                        <label for="validationServer04">Unit Price</label>
+                        <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="Unit Price" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 col-lg-4">
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+                                <label class="form-check-label" for="invalidCheck3">
+                                    Agree to terms and conditions
+                                </label>
+                                <div class="invalid-feedback">
+                                    You must agree before submitting.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8 col-lg-4">
+                        <span><button class="btn btn-primary" type="submit">+ Add Item </button>
+                            <button class="btn btn-danger" type="submit">- Delete Item </button></span>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--     Customer table  ----------------------->
+        <div class="container itemTable">
+            <table class="table table-bordered table-hover">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Item Code</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">QTY.</th>
+                    <th scope="col">Unit Price(LKR)</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>cement</td>
+                    <td>1000</td>
+                    <td>1250</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>LP gas</td>
+                    <td>500</td>
+                    <td>1300</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>steel</td>
+                    <td>1000</td>
+                    <td>400</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
     <!-- /.content-wrapper -->
     <footer class="main-footer">

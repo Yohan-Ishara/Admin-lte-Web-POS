@@ -1,3 +1,8 @@
+.backcolor{
+    background-image: linear-gradient(to right top, #bcbcbc, #bab9c2,
+    #b6b7c9, #b0b5d0, #a8b3d7, #a0b7dd, #96bbe3, #8bbfe7,
+    #82c8e8, #7ed1e6, #81d9e1, #8be0da);
+}
 .header{
     height: 90px;
 }
@@ -7,4 +12,8 @@
 }
 .CusTable{
     padding-top: 5px;
+}
+.footer{
+    background-color: slategrey;
+    color: white;
 }
