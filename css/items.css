@@ -1,5 +1,6 @@
 .itemContent{
-
+    background-image: linear-gradient(to right top, #93d16b, #7bd387, #68d4a1, #5fd3b7, #64d1c8,
+    #63d4cd, #61d7d2, #60dad7, #4fe3d3, #46ecca, #4cf4bc, #5ffbaa);
 }
 .header{
     height: 90px;
