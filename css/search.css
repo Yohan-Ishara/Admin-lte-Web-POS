@@ -1,0 +1,12 @@
+.header{
+    height: 90px;
+}
+.header h3{
+    color: white;!important;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.orders{
+    background-image: linear-gradient(to right top, #966525, #8d7827, #808934, #6d9a4c,
+    #54a96a, #4fb574, #47c27e, #3acf8a, #63dd76, #8ee95d, #bcf23d, #eef900);
+}

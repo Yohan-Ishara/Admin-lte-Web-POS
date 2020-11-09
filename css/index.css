@@ -4,6 +4,10 @@
     background-size: cover;
 
 }
+.footer{
+    background-color: slategrey;
+    color: white;
+}
 .main{
     height: 400px;
 }
@@ -14,12 +18,14 @@
     transition-duration: 2s;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+
 }
 .middle-content h1{
     font-size: 100px;
 }
 .middle-content h3{
     font-size: 70px;
+    font-weight: bold;
 }
 
 @keyframes middle-content {
@@ -28,12 +34,12 @@
         opacity: 0;
     }
     50%{
-        color: #8be0da;
+        color: darkblue;
     }
     100%{
        margin-top: 50px;
         opacity: 1;
-        color: blue;
+        color: darkred;
     }
 
 }
