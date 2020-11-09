@@ -1,0 +1,39 @@
+.cover{
+    background-image: linear-gradient(to right top, #6bd18a, #7bd589, #89da87, #98de86, #a6e286, #b4df7d,
+    #c1dc75, #ced86f, #dccc63, #e8bf5d, #f3b15c, #fba35f);
+    background-size: cover;
+
+}
+.main{
+    height: 400px;
+}
+.middle-content{
+    box-sizing: border-box;
+    text-align: center;
+    animation-name: middle-content;
+    transition-duration: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.middle-content h1{
+    font-size: 100px;
+}
+.middle-content h3{
+    font-size: 70px;
+}
+
+@keyframes middle-content {
+    0%{
+        margin-top: 300px;
+        opacity: 0;
+    }
+    50%{
+        color: #8be0da;
+    }
+    100%{
+       margin-top: 50px;
+        opacity: 1;
+        color: blue;
+    }
+
+}
